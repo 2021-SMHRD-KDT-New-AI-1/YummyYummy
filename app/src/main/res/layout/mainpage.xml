@@ -18,16 +18,16 @@
 
 
         <Button
-            android:layout_width="80dp"
-            android:layout_height="70dp"
+            android:layout_width="70dp"
+            android:layout_height="59dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginBottom="78dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="53dp"
+            android:layout_marginBottom="97dp"
             android:background="@drawable/img02"
             android:backgroundTint="@color/white"></Button>
 
@@ -39,10 +39,10 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="141dp"
-            android:layout_marginEnd="28dp"
-            android:layout_marginBottom="32dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="127dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="46dp"
             android:fontFamily="@font/elicebold"
             android:textColor="@color/white"
             tools:text="Food that Koreans pay attention to" />
@@ -61,16 +61,16 @@
 
 
         <Button
-            android:layout_width="84dp"
-            android:layout_height="84dp"
+            android:layout_width="65dp"
+            android:layout_height="63dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginBottom="70dp"
+            android:layout_marginStart="61dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="91dp"
             android:background="@drawable/img03"
             android:backgroundTint="@color/white"></Button>
 
@@ -82,10 +82,10 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="49dp"
-            android:layout_marginTop="148dp"
-            android:layout_marginEnd="54dp"
-            android:layout_marginBottom="36dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginBottom="54dp"
             android:fontFamily="@font/elicebold"
             android:text="Community"
             android:textColor="@color/white" />
@@ -105,16 +105,16 @@
 
 
         <Button
-            android:layout_width="104dp"
-            android:layout_height="96dp"
+            android:layout_width="72dp"
+            android:layout_height="61dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="54dp"
-            android:layout_marginTop="131dp"
-            android:layout_marginEnd="54dp"
-            android:layout_marginBottom="186dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="207dp"
             android:background="@drawable/img01"
             android:backgroundTint="@color/white"></Button>
 
@@ -126,10 +126,10 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="51dp"
-            android:layout_marginTop="272dp"
-            android:layout_marginEnd="41dp"
-            android:layout_marginBottom="135dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="236dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginBottom="171dp"
             android:fontFamily="@font/elicebold"
             android:text="Helpful sentences"
             android:textColor="@color/white" />
@@ -149,16 +149,16 @@
 
 
         <Button
-            android:layout_width="80dp"
-            android:layout_height="70dp"
+            android:layout_width="72dp"
+            android:layout_height="69dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="35dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginBottom="57dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="64dp"
             android:background="@drawable/img4"
             android:backgroundTint="@color/white"></Button>
 
@@ -170,10 +170,10 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="123dp"
-            android:layout_marginEnd="46dp"
-            android:layout_marginBottom="22dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="121dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="24dp"
             android:fontFamily="@font/elicebold"
             android:text="Camera_text"
             android:textColor="@color/white" />
@@ -194,16 +194,16 @@
 
 
         <Button
-            android:layout_width="80dp"
-            android:layout_height="70dp"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="54dp"
-            android:layout_marginTop="35dp"
-            android:layout_marginEnd="54dp"
-            android:layout_marginBottom="60dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="67dp"
+            android:layout_marginBottom="64dp"
             android:background="@drawable/img5"
             android:backgroundTint="@color/white"></Button>
 
@@ -215,9 +215,9 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="60dp"
+            android:layout_marginStart="65dp"
             android:layout_marginTop="122dp"
-            android:layout_marginEnd="60dp"
+            android:layout_marginEnd="55dp"
             android:layout_marginBottom="25dp"
             android:fontFamily="@font/elicebold"
             android:text="Camera_img"
