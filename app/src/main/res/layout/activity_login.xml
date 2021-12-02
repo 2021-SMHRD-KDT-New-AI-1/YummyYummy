@@ -32,14 +32,14 @@
 
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:background="@drawable/btn_round"
         android:backgroundTint="#BDB76B"
         android:fontFamily="@font/marubold"
-        android:textColor="#FFFFFF"
         android:text="login"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/ed_pw"
         app:layout_constraintHorizontal_bias="0.422"
         app:layout_constraintStart_toStartOf="@+id/ed_pw"
@@ -78,7 +78,7 @@
 
     <Button
         android:id="@+id/btn_create"
-        android:layout_width="129dp"
+        android:layout_width="130dp"
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/btn_round"
