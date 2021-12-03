@@ -6,6 +6,7 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
+        android:id="@+id/rl_1"
         android:layout_width="180dp"
         android:layout_height="210dp"
         android:background="@drawable/btn_color2"
@@ -18,6 +19,7 @@
 
 
         <Button
+            android:id="@+id/btn_rank"
             android:layout_width="70dp"
             android:layout_height="59dp"
             android:layout_alignParentStart="true"
@@ -32,7 +34,7 @@
             android:backgroundTint="@color/white"></Button>
 
         <TextView
-            android:id="@+id/tv_ranking"
+            android:id="@+id/tv_rank"
             android:layout_width="122dp"
             android:layout_height="36dp"
             android:layout_alignParentStart="true"
@@ -49,6 +51,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/rl_2"
         android:layout_width="180dp"
         android:layout_height="210dp"
         android:background="@drawable/btn_color3"
@@ -61,6 +64,7 @@
 
 
         <Button
+            android:id="@+id/btn_comm"
             android:layout_width="65dp"
             android:layout_height="63dp"
             android:layout_alignParentStart="true"
@@ -93,6 +97,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/rl_3"
         android:layout_width="210dp"
         android:layout_height="428dp"
         android:background="@drawable/btn_color1"
@@ -105,6 +110,7 @@
 
 
         <Button
+            android:id="@+id/btn_sentence"
             android:layout_width="72dp"
             android:layout_height="61dp"
             android:layout_alignParentStart="true"
@@ -137,6 +143,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/rl_4"
         android:layout_width="180dp"
         android:layout_height="170dp"
         android:background="@drawable/btn_color4"
@@ -149,6 +156,7 @@
 
 
         <Button
+            android:id="@+id/btn_text"
             android:layout_width="72dp"
             android:layout_height="69dp"
             android:layout_alignParentStart="true"
@@ -163,7 +171,7 @@
             android:backgroundTint="@color/white"></Button>
 
         <TextView
-            android:id="@+id/tv_camera2"
+            android:id="@+id/tv_text"
             android:layout_width="84dp"
             android:layout_height="25dp"
             android:layout_alignParentStart="true"
@@ -182,6 +190,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/rl_5"
         android:layout_width="210dp"
         android:layout_height="170dp"
         android:background="@drawable/btn_color5"
@@ -194,6 +203,7 @@
 
 
         <Button
+            android:id="@+id/btn_img"
             android:layout_width="74dp"
             android:layout_height="65dp"
             android:layout_alignParentStart="true"
@@ -208,7 +218,7 @@
             android:backgroundTint="@color/white"></Button>
 
         <TextView
-            android:id="@+id/tv_camera1"
+            android:id="@+id/tv_img"
             android:layout_width="81dp"
             android:layout_height="25dp"
             android:layout_alignParentStart="true"
