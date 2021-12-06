@@ -103,13 +103,13 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <Button
-        android:id="@+id/btn_hala"
+        android:id="@+id/btn_haram"
         android:layout_width="72dp"
         android:layout_height="36dp"
         android:background="@drawable/btn_round"
         android:backgroundTint="#C1BC7F"
         android:fontFamily="@font/marubold"
-        android:text="hala"
+        android:text="haram"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView8"
@@ -210,10 +210,10 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginTop="25dp"
-        app:layout_constraintEnd_toEndOf="@+id/btn_hala"
+        app:layout_constraintEnd_toEndOf="@+id/btn_haram"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/btn_hala"
-        app:layout_constraintTop_toBottomOf="@+id/btn_hala"
+        app:layout_constraintStart_toStartOf="@+id/btn_haram"
+        app:layout_constraintTop_toBottomOf="@+id/btn_haram"
         app:srcCompat="@drawable/began" />
 
     <ImageView
