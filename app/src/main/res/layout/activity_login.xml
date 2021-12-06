@@ -40,19 +40,19 @@
         android:fontFamily="@font/marubold"
         android:text="login"
         android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/ed_pw"
+        app:layout_constraintEnd_toEndOf="@+id/login_pw"
         app:layout_constraintHorizontal_bias="0.422"
-        app:layout_constraintStart_toStartOf="@+id/ed_pw"
-        app:layout_constraintTop_toBottomOf="@+id/ed_pw" />
+        app:layout_constraintStart_toStartOf="@+id/login_pw"
+        app:layout_constraintTop_toBottomOf="@+id/login_pw" />
 
     <EditText
-        android:id="@+id/ed_id"
+        android:id="@+id/login_id"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="290dp"
         android:ems="10"
         android:fontFamily="@font/marubold"
-        android:hint="Your Email"
+        android:hint="Your ID"
         android:inputType="textPersonName"
         android:textColorHint="#BABABA"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,19 +61,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/ed_pw"
+        android:id="@+id/login_pw"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="30dp"
         android:ems="10"
         android:fontFamily="@font/marubold"
-        android:hint="Password:"
+        android:hint="Password"
         android:inputType="textPassword"
         android:textColorHint="#BABABA"
-        app:layout_constraintEnd_toEndOf="@+id/ed_id"
+        app:layout_constraintEnd_toEndOf="@+id/login_id"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/ed_id"
-        app:layout_constraintTop_toBottomOf="@+id/ed_id" />
+        app:layout_constraintStart_toStartOf="@+id/login_id"
+        app:layout_constraintTop_toBottomOf="@+id/login_id" />
 
 
     <Button
