@@ -51,6 +51,7 @@ public class mainpage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(mainpage.this, CommunityActivity.class);
+                intent.putExtra("id", member_id);
                 startActivity(intent);
             }
         });

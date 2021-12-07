@@ -13,6 +13,9 @@
         android:theme="@style/Theme.YummyPorject"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".PostingActivity"
+            android:exported="true" />
+        <activity
             android:name=".CommunityActivity"
             android:exported="true" />
         <activity

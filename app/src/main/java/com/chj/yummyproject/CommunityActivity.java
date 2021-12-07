@@ -4,7 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
@@ -13,6 +17,8 @@ public class CommunityActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     ArrayList<ModelFeed> modelFeedArrayList = new ArrayList<>();
     AdapterFeed adapterFeed;
+    FloatingActionButton fab_main;
+    String member_id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,12 +26,25 @@ public class CommunityActivity extends AppCompatActivity {
         setContentView(R.layout.activity_community);
 
         recyclerView = findViewById(R.id.recyclerView);
+        fab_main = findViewById(R.id.fab_main);
+
+        Intent i = getIntent();
+        member_id = i.getStringExtra("id");
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
         adapterFeed = new AdapterFeed(this, modelFeedArrayList);
         recyclerView.setAdapter(adapterFeed);
+
+        fab_main.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CommunityActivity.this, PostingActivity.class);
+                intent.putExtra("id", member_id);
+                startActivity(intent);
+            }
+        });
 
         populateRecyclerView();
     }
