@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,12 +19,14 @@ public class mainpage extends AppCompatActivity {
     String member_id, member_pw, member_name;
     int member_halar, member_vegan, member_egg, member_nut, member_fish, member_bean;
     Button btn_rank;
+    RelativeLayout rl_community;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainpage);
 
         btn_rank = findViewById(R.id.btn_rank);
+        rl_community = findViewById(R.id.rl_community);
 
         intent = getIntent();
         member_info_string = intent.getStringExtra("member_info");
@@ -43,5 +46,13 @@ public class mainpage extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+
+        rl_community.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mainpage.this, CommunityActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
