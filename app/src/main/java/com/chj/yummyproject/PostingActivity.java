@@ -2,8 +2,10 @@ package com.chj.yummyproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,6 +30,8 @@ public class PostingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_posting);
+
+
 
         tv_id = findViewById(R.id.tv_id);
         et_post = findViewById(R.id.et_post);
@@ -59,6 +63,11 @@ public class PostingActivity extends AppCompatActivity {
                             @Override
                             public void onResponse(String response) {
 
+                                Log.d("PostingActivity", response);
+                                Intent intent = new Intent(PostingActivity.this, CommunityActivity.class);
+                                intent.putExtra("id", member_id);
+                                startActivity(intent);
+                                finish();
                             }
                         },
                         new Response.ErrorListener() {
@@ -69,10 +78,8 @@ public class PostingActivity extends AppCompatActivity {
                         }
                 );
                 requestQueue.add(request);
-                Intent intent = new Intent(PostingActivity.this, CommunityActivity.class);
-                intent.putExtra("id", member_id);
-                startActivity(intent);
             }
         });
+
     }
 }
