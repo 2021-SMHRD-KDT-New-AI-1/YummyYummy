@@ -1,8 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.YummyPorject" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.YummyPorject" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#3B5998</item>
+        <item name="colorPrimary">#C1BC7F</item>
         <item name="colorPrimaryVariant">#324d87</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->

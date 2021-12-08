@@ -8,11 +8,11 @@
 
     <RelativeLayout
         android:id="@+id/rellay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_marginRight="15dp">
 
         <ImageView
             android:id="@+id/imgView_proPic"
@@ -30,22 +30,24 @@
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/imgView_proPic"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/tv_name"
                 android:layout_width="wrap_content"
-                android:text="Karun Shrestha"
-                android:textColor="@color/black"
-                android:textSize="17sp"
+                android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:layout_height="wrap_content"/>
+                android:text="Karun Shrestha"
+                android:textColor="#AE905E"
+                android:textSize="17sp" />
+
             <TextView
                 android:id="@+id/tv_time"
                 android:layout_width="wrap_content"
-                android:textSize="13sp"
+                android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
                 android:text="11 hrs"
-                android:textColor="@color/grey"
-                android:layout_height="wrap_content"/>
+                android:textColor="#AE905E"
+                android:textSize="13sp" />
         </LinearLayout>
 
     </RelativeLayout>
@@ -59,7 +61,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="15dp"
         android:text="This is Status"
-        android:textColor="@color/black"
+        android:textColor="#555555"
         android:textSize="16sp" />
 
     <ImageView
@@ -87,9 +89,12 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="15dp"
-                android:layout_height="15dp"
-                android:src="@drawable/ic_like" />
+                android:layout_width="18dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/heart"
+                android:backgroundTint="#999999"
+                android:backgroundTintMode="multiply"
+                />
 
             <TextView
                 android:id="@+id/tv_likes"
@@ -97,7 +102,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:text="18"
-                android:textColor="@color/black"
+                android:textColor="#999999"
                 android:textSize="13sp" />
         </LinearLayout>
 
@@ -107,7 +112,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:text="5 comments"
-            android:textColor="@color/black"
+            android:textColor="#999999"
             android:textSize="13sp" />
 
     </RelativeLayout>
@@ -134,21 +139,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true">
+
                 <ImageView
                     android:layout_width="18dp"
                     android:layout_height="18dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/ic_like_btn"/>
+                    app:srcCompat="@drawable/ic_like_btn"
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Like"
                     android:fontFamily="sans-serif-medium"
-                    android:textColor="@color/black"
-                    android:textSize="13sp"/>
+                    android:text="Like"
+                    android:textColor="#C1BC7F"
+                    android:textSize="13sp" />
             </LinearLayout>
         </RelativeLayout>
 
@@ -174,7 +181,7 @@
                     android:layout_marginLeft="10dp"
                     android:text="Comment"
                     android:fontFamily="sans-serif-medium"
-                    android:textColor="@color/black"
+                    android:textColor="#C1BC7F"
                     android:textSize="13sp"/>
             </LinearLayout>
         </RelativeLayout>
@@ -188,21 +195,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true">
+
                 <ImageView
                     android:layout_width="18dp"
                     android:layout_height="18dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/ic_share_btn"/>
+                    app:srcCompat="@drawable/ic_share_btn" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Share"
                     android:fontFamily="sans-serif-medium"
-                    android:textColor="@color/black"
-                    android:textSize="13sp"/>
+                    android:text="Share"
+                    android:textColor="#C1BC7F"
+                    android:textSize="13sp" />
             </LinearLayout>
         </RelativeLayout>
     </LinearLayout>

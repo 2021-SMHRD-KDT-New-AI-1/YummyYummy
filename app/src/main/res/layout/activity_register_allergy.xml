@@ -60,35 +60,6 @@
         app:layout_constraintVertical_bias="0.049" />
 
     <Button
-        android:id="@+id/btn_next"
-        android:layout_width="75dp"
-        android:layout_height="34dp"
-        android:background="@drawable/btn_round_white"
-        android:backgroundTint="#D8D4D4"
-        android:fontFamily="@font/marubold"
-        android:text="Next"
-        android:textColor="#FF6C6A6A"
-        android:textColorHighlight="#FDFBFB"
-        android:textColorHint="#F6F4F4"
-        android:textColorLink="#F1EBEB"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.923" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="56dp"
-        app:layout_constraintStart_toStartOf="@+id/tv_title2"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title2"
-        app:srcCompat="@drawable/egg" />
-
-    <Button
         android:id="@+id/btn_egg"
         android:layout_width="72dp"
         android:layout_height="36dp"
@@ -99,7 +70,6 @@
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView4"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
@@ -114,46 +84,13 @@
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView6"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/imageView6"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/tv_title2"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title2"
-        app:srcCompat="@drawable/peanuts" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/btn_fish"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/btn_fish"
-        app:layout_constraintTop_toBottomOf="@+id/btn_fish"
-        app:srcCompat="@drawable/bean" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="@+id/btn_nut"
-        app:layout_constraintStart_toStartOf="@+id/btn_nut"
-        app:layout_constraintTop_toBottomOf="@+id/btn_nut"
-        app:srcCompat="@drawable/halal" />
 
     <Button
         android:id="@+id/btn_fish"
         android:layout_width="72dp"
         android:layout_height="36dp"
-        android:layout_marginTop="4dp"
         android:background="@drawable/btn_round"
         android:backgroundTint="#C1BC7F"
         android:fontFamily="@font/marubold"
@@ -166,40 +103,9 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <Button
-        android:id="@+id/btn_bean"
-        android:layout_width="72dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/btn_round"
-        android:backgroundTint="#C1BC7F"
-        android:fontFamily="@font/marubold"
-        android:text="bean"
-        android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-    <Button
-        android:id="@+id/btn_meat"
-        android:layout_width="72dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/btn_round"
-        android:backgroundTint="#C1BC7F"
-        android:fontFamily="@font/marubold"
-        android:text="meat"
-        android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView7"
-        app:layout_constraintStart_toStartOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
-
-    <Button
         android:id="@+id/btn_hala"
         android:layout_width="72dp"
         android:layout_height="36dp"
-        android:layout_marginTop="4dp"
         android:background="@drawable/btn_round"
         android:backgroundTint="#C1BC7F"
         android:fontFamily="@font/marubold"
@@ -211,11 +117,99 @@
         app:layout_constraintStart_toStartOf="@+id/imageView8"
         app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
+    <Button
+        android:id="@+id/btn_bean"
+        android:layout_width="72dp"
+        android:layout_height="36dp"
+        android:background="@drawable/btn_round"
+        android:backgroundTint="#C1BC7F"
+        android:fontFamily="@font/marubold"
+        android:text="bean"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="75dp"
+        android:layout_height="34dp"
+        android:background="@drawable/btn_round_white"
+        android:backgroundTint="#D8D4D4"
+        android:fontFamily="@font/marubold"
+        android:text="check"
+        android:textColor="#FF6C6A6A"
+        android:textColorHighlight="#FDFBFB"
+        android:textColorHint="#F6F4F4"
+        android:textColorLink="#F1EBEB"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.794"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
+
+    <Button
+        android:id="@+id/btn_meat"
+        android:layout_width="72dp"
+        android:layout_height="36dp"
+        android:background="@drawable/btn_round"
+        android:backgroundTint="#C1BC7F"
+        android:fontFamily="@font/marubold"
+        android:text="meat"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_fish"
+        app:layout_constraintStart_toStartOf="@+id/btn_fish"
+        app:layout_constraintTop_toBottomOf="@+id/btn_fish"
+        app:srcCompat="@drawable/bean" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_title2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title2"
+        app:srcCompat="@drawable/egg" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_egg"
+        app:layout_constraintStart_toStartOf="@+id/btn_egg"
+        app:layout_constraintTop_toBottomOf="@+id/btn_egg"
+        app:srcCompat="@drawable/fish" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title2"
+        app:srcCompat="@drawable/peanuts" />
+
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         app:layout_constraintEnd_toEndOf="@+id/btn_hala"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/btn_hala"
@@ -223,14 +217,13 @@
         app:srcCompat="@drawable/began" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imageView8"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="@+id/btn_egg"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/btn_egg"
-        app:layout_constraintTop_toBottomOf="@+id/btn_egg"
-        app:srcCompat="@drawable/fish" />
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_nut"
+        app:layout_constraintStart_toStartOf="@+id/btn_nut"
+        app:layout_constraintTop_toBottomOf="@+id/btn_nut"
+        app:srcCompat="@drawable/halal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
