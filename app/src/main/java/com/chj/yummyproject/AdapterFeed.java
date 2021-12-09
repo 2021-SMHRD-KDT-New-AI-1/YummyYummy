@@ -13,7 +13,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.android.volley.Request;
 import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestManager;
@@ -54,6 +58,36 @@ public class AdapterFeed extends RecyclerView.Adapter<AdapterFeed.MyViewHolder> 
         holder.tv_comments.setText(modelFeed.getComments() + " comments");
         holder.tv_status.setText(modelFeed.getStatus());
         Log.d("time",modelFeed.getTime());
+
+        holder.rl_like.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url = urlInfo.getUrl();
+                url += "Like";
+                url += "?post_num=" + modelFeed.getId();
+
+                StringRequest request = new StringRequest(
+                        Request.Method.GET,
+                        url,
+                        new Response.Listener<String>() {
+                            @Override
+                            public void onResponse(String response) {
+                                Log.d("result",response);
+                                Intent intent = new Intent(context, CommunityActivity.class);
+                                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                                context.startActivity(intent);
+                            }
+                        },
+                        new Response.ErrorListener() {
+                            @Override
+                            public void onErrorResponse(VolleyError error) {
+
+                            }
+                        }
+                );
+                requestQueue.add(request);
+            }
+        });
 
         holder.rl_comment.setOnClickListener(new View.OnClickListener() {
             @Override
