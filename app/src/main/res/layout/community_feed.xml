@@ -45,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
-                android:text="11 hrs"
+                android:text="2021-12-08T15:00:00.000Z"
                 android:textColor="#AE905E"
                 android:textSize="13sp" />
         </LinearLayout>

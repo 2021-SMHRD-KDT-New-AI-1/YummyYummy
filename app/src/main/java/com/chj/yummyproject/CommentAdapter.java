@@ -48,7 +48,7 @@ public class CommentAdapter extends BaseAdapter {
         TextView tv_commentCon = view.findViewById(R.id.tv_commentCon);
 
         tv_memberId.setText(data.get(i).getMember_id());
-        tv_date.setText(data.get(i).getComment_date());
+        tv_date.setText(data.get(i).getComment_date().substring(0,10));
         tv_commentCon.setText(data.get(i).getComment_cont());
 
         return view;

@@ -2,6 +2,7 @@ package com.chj.yummyproject;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,10 +49,11 @@ public class AdapterFeed extends RecyclerView.Adapter<AdapterFeed.MyViewHolder> 
         }
 
         holder.tv_name.setText(modelFeed.getName());
-        holder.tv_time.setText(modelFeed.getTime());
+        holder.tv_time.setText(modelFeed.getTime().substring(0,10));
         holder.tv_likes.setText(String.valueOf(modelFeed.getLikes()));
         holder.tv_comments.setText(modelFeed.getComments() + " comments");
         holder.tv_status.setText(modelFeed.getStatus());
+        Log.d("time",modelFeed.getTime());
 
         holder.rl_comment.setOnClickListener(new View.OnClickListener() {
             @Override

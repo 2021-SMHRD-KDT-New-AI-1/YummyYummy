@@ -90,11 +90,11 @@ public class CommunityActivity extends AppCompatActivity {
                                 ModelFeed modelFeed = new ModelFeed(post_num, post_like, post_comments, R.drawable.person, 0, member_id, post_date, post_content);
                                 modelFeedArrayList.add(modelFeed);
                             }
-                            ModelFeed modelFeed = new ModelFeed(10,9,2, R.drawable.person, R.drawable.img_post1, "John Cena", "2 hrs", "Today, I went to eat Gamjatang with my Korean friends, and it was so delicious to eat hot rice with soju.");
+                            ModelFeed modelFeed = new ModelFeed(10,9,2, R.drawable.person, R.drawable.img_post1, "John Cena", "2021-12-08T15:00:00.000Z", "Today, I went to eat Gamjatang with my Korean friends, and it was so delicious to eat hot rice with soju.");
                             modelFeedArrayList.add(modelFeed);
-                            modelFeed = new ModelFeed(11,26,6, R.drawable.person, 0, "Karun Shrestha", "9 hrs", "Don't be afraid of your fears. They're not there to scare you. They're let you know that something is worth it.");
+                            modelFeed = new ModelFeed(11,26,6, R.drawable.person, 0, "Karun Shrestha", "2021-12-08T15:00:00.000Z", "Don't be afraid of your fears. They're not there to scare you. They're let you know that something is worth it.");
                             modelFeedArrayList.add(modelFeed);
-                            modelFeed = new ModelFeed(12,17,5, R.drawable.person, R.drawable.img_post2, "Cho Hyun Joong", "13 hrs", "That reflection!!");
+                            modelFeed = new ModelFeed(12,17,5, R.drawable.person, R.drawable.img_post2, "Cho Hyun Joong", "2021-12-08T15:00:00.000Z", "That reflection!!");
                             modelFeedArrayList.add(modelFeed);
                             adapterFeed.notifyDataSetChanged();
                         } catch (JSONException e) {
