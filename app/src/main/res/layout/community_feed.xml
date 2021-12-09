@@ -131,9 +131,10 @@
         android:layout_height="45dp">
 
         <RelativeLayout
+            android:id="@+id/rl_like"
             android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -145,8 +146,7 @@
                     android:layout_height="18dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/ic_like_btn"
-                    />
+                    app:srcCompat="@drawable/ic_like_btn" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -160,36 +160,39 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/rl_comment"
             android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true">
+
                 <ImageView
                     android:layout_width="18dp"
                     android:layout_height="18dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/ic_comment_btn"/>
+                    app:srcCompat="@drawable/ic_comment_btn" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Comment"
                     android:fontFamily="sans-serif-medium"
+                    android:text="Comment"
                     android:textColor="#C1BC7F"
-                    android:textSize="13sp"/>
+                    android:textSize="13sp" />
             </LinearLayout>
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/rl_share"
             android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <LinearLayout
                 android:layout_width="wrap_content"
