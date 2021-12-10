@@ -30,7 +30,7 @@ public class FoodInfoActivity extends AppCompatActivity {
     RequestQueue requestQueue;
     URLInfo urlInfo;
     int food_num;
-    String food_img_path, food_ingre, food_favor, food_kcal, food_desc;
+    String food_name, food_img_path, food_ingre, food_favor, food_kcal, food_desc;
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,7 +45,7 @@ public class FoodInfoActivity extends AppCompatActivity {
         btn_confirm = findViewById(R.id.btn_confirm);
 
         Intent i = getIntent();
-        String food_name = i.getStringExtra("result");
+        String food_kor_name = i.getStringExtra("result");
 
         if (requestQueue == null) {
             requestQueue = Volley.newRequestQueue(getApplicationContext());
@@ -53,7 +53,7 @@ public class FoodInfoActivity extends AppCompatActivity {
 
         String url = urlInfo.getUrl();
         url += "Food";
-        url += "?food_name=" + food_name;
+        url += "?food_kor_name=" + food_kor_name;
 
         StringRequest request = new StringRequest(
                 Request.Method.GET,
@@ -64,6 +64,7 @@ public class FoodInfoActivity extends AppCompatActivity {
                         try {
                             JSONArray foodInfo = new JSONArray(response);
                             JSONObject info = (JSONObject) foodInfo.get(0);
+                            food_name = info.getString("food_name");
                             food_num = info.getInt("food_num");
                             food_img_path = info.getString("food_img_path");
                             food_ingre = info.getString("food_ingre");

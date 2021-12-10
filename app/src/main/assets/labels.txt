@@ -1,150 +1,150 @@
-Gaji-bokkeum 가지볶음
-Ganjang-gejang 간장게장
-Galbi-gui 갈비구이
-Galbi-jjim 갈비찜
-Galbitang 갈비탕
-Galchi-gui 갈치구이
-Galchi-jorim 갈치조림
-Gamjajeon 감자전
-Gamja-jorim 감자조림
-Gamjache-bokkeum 감자채볶음
-Gamjatang 감자탕
-Gatkimchi 갓김치
-Gun-saeu-bokkeum 건새우볶음
-Gyeongdan 경단
-Gyeran-guk 계란국
-Gyeran-mari 계란말이
-Gyeran-jjim 계란찜
-Gyeran-fry 계란후라이
-Godeungeo-gui 고등어구이
-Godeungeo-mujorim 고등어무조림
-Gosari-namul 고사리나물
-Jinmichae-muchim 진미채무침
-Gochu-twigim 고추튀김
-Seolleongtang 설렁탕
-Gopchang-gui 곱창구이
-Gopchang-jungol 곱창전골
-Gwamegi 과메기
-Gimbap 김밥
-Kimchi-bokkeumbap 김치볶음밥
-Kimchijeon 김치전
-Kimchi-jjigae 김치찌개
-Kimchijjim 김치찜
-Kkakdugi 깍두기
-Kkaennip-jangajji 깻잎장아찌
-Kkomak-jjim 꼬막찜
-Kkongchi-jorim 꽁치조림
-Kkwarigochu-jjim 꽈리고추무침
-Kkultteok 꿀떡
-Nabak-kimchi 나박김치
-Nurungji 누룽지
-Dakgalbi 닭갈비
-Dakgaejang 닭계장
-Dakbokkeumtang 닭볶음탕
-Deodeok-Gui 더덕구이
-Doraji-muchim 도라지무침
-Dotorimuk 도토리묵
-Donggeurangttaeng 동그랑땡
-Dongtae-Jjigae 동태찌개
-Doenjang-jjigae 된장찌개
-Dubu-kimchi 두부김치
-Dubu-jorim 두부조림
-Ttangkong-jorim 땅콩조림
-Tteokgalbi 떡갈비
-Tteok-ggochi 떡꼬치
-Mandu-guk 만두국
-Tteokbokki 떡볶이
-Ramyeon 라면
-Rabokki 라볶이
-Mak-Guksu 막국수
-Mandu 만두
-Maeuntang 매운탕
-Meonggae 멍게
-Mechurial-jangjorim 메추리알장조림
-Myeolchi-bokkeum 멸치볶음
-Muguk 무국
-Musaengchae 무생채
-Mul-naengmyeon 물냉면
-Mulhoe 물회
-miyeokguk 미역국
-Miyeokjulgi-bokkeum 미역줄기볶음
-Baechu-kimchi 배추김치
-Baek-kimchi 백김치
-Bo-ssam 보쌈
-Buchu-kimchi 부추김치
-Bugeoguk 북어국
-Bulgogi 불고기
-Bibim-naengmyeon 비빔냉면
-Bibimbap 비빔밥
-Sannakji 산낙지
-Samgyeopsal 삼겹살
-Samgyetang 삼계탕
-Saeu-bbokeumbap 새우볶음밥
-Saeu-twigim 새우튀김
-Sangseun-jeon 생선전
-Sosegi-Bokkeum 소세지볶음
-Songpyeon 송편
-Suyuk 수육
-Sujeonggwa 수정과
-Sujebi 수제비
-Sukjunamul-muchim 숙주나물무침
-Sundae 순대
-Sundubu-jjigae 순두부찌개
-Sigeumchi-namul 시금치나물
-Siraegi-guk 시래기국
-Sikhye 식혜
-Al-bap 알밥
-Aehobak-bokkeum 애호박볶음
-Yakgwa 약과
-Yaksik 약식
-Yangnyeom-gejang 양념게장
-Yangnyeom-tongdak 양념통닭
-Eomuk-bokkeum 어묵볶음
-Yeon-geun-jorim 연근조림
-Yeolmu-guksu 열무국수
-Yeolmu kimchi 열무 김치
-Oisobagi 오이소박이
-Ojingeochae-muchim 오징어채무침
-Ojingeo-twigim 오징어튀김
-Ueong-jorim 우엉조림
-Yubu-chobap 유부초밥
-Yukgaejang 육개장
-Yukhoe 육회
-Jancji-guksu 국수
-Japgokbap 잡곡밥
-Japchae 잡채
-Jangeo-Gui 장어구이
-Jangjorim 장조림
-Jeonbokjuk 전복죽
-Jeotgal 젓갈
-Jeyuk-bokkeum 제육볶음
-Jogae-gui 조개구이
-Jogi-gui 굴비구이
-Jokbal 족발
-Jukkumi-bokkeum 주꾸미볶음
-jumeokbap 주먹밥
-Jjajangmyeon 짜장면
-Jjamppong 짬뽕
-Jjolmyeon 쫄면
-Jjimdak 찜닭
-Chonggak-kimchi 총각김치
-Chueotang 추어탕
-kalguksu 칼국수
-Kodari-jorim 코다리조림
-Kongguksu 콩국수
-Kongnamulguk 콩나물국
-Kongnamul-muchim 콩나물무침
-kongjaban 콩자반
-Pa-kimchi 파김치
-Pajeon 파전
-Pyeonyuk 편육
-Pizza 피자
-Hangwa 한과
-Haemul-Jjim 해물찜
-Hobakjeon 호박전
-Hobak-juk 호박죽
-Hongeohoe-muchim 홍어회무침
-Hwangtae-Gui 황태구이
-Hoe-Muchim 회무침
-fried-chikin 후라이드치킨
-Hunjeori 훈제오리
+가지볶음
+간장게장
+갈비구이
+갈비찜
+갈비탕
+갈치구이
+갈치조림
+감자전
+감자조림
+감자채볶음
+감자탕
+갓김치
+건새우볶음
+경단
+계란국
+계란말이
+계란찜
+계란후라이
+고등어구이
+고등어무조림
+고사리나물
+진미채무침
+고추튀김
+설렁탕
+곱창구이
+곱창전골
+과메기
+김밥
+김치볶음밥
+김치전
+김치찌개
+김치찜
+깍두기
+깻잎장아찌
+꼬막찜
+꽁치조림
+꽈리고추무침
+꿀떡
+나박김치
+누룽지
+닭갈비
+닭계장
+닭볶음탕
+더덕구이
+도라지무침
+도토리묵
+동그랑땡
+동태찌개
+된장찌개
+두부김치
+두부조림
+땅콩조림
+떡갈비
+떡꼬치
+만두국
+떡볶이
+라면
+라볶이
+막국수
+만두
+매운탕
+멍게
+메추리알장조림
+멸치볶음
+무국
+무생채
+물냉면
+물회
+미역국
+미역줄기볶음
+배추김치
+백김치
+보쌈
+부추김치
+북어국
+불고기
+비빔냉면
+비빔밥
+산낙지
+삼겹살
+삼계탕
+새우볶음밥
+새우튀김
+생선전
+소세지볶음
+송편
+수육
+수정과
+수제비
+숙주나물무침
+순대
+순두부찌개
+시금치나물
+시래기국
+식혜
+알밥
+애호박볶음
+약과
+약식
+양념게장
+양념통닭
+어묵볶음
+연근조림
+열무국수
+열무 김치
+오이소박이
+오징어채무침
+오징어튀김
+우엉조림
+유부초밥
+육개장
+육회
+국수
+잡곡밥
+잡채
+장어구이
+장조림
+전복죽
+젓갈
+제육볶음
+조개구이
+굴비구이
+족발
+주꾸미볶음
+주먹밥
+짜장면
+짬뽕
+쫄면
+찜닭
+총각김치
+추어탕
+칼국수
+코다리조림
+콩국수
+콩나물국
+콩나물무침
+콩자반
+파김치
+파전
+편육
+피자
+한과
+해물찜
+호박전
+호박죽
+홍어회무침
+황태구이
+회무침
+후라이드치킨
+훈제오리
