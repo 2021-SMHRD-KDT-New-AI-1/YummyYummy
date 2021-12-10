@@ -229,6 +229,7 @@ public class CameraActivity extends AppCompatActivity {
                         Intent intent = new Intent(CameraActivity.this, FoodInfoActivity.class);
                         intent.putExtra("result", output.first);
                         startActivity(intent);
+                        finish();
                     }
                 });
             }
