@@ -27,7 +27,7 @@ import java.util.Map;
 import static org.tensorflow.lite.support.image.ops.ResizeOp.ResizeMethod.NEAREST_NEIGHBOR;
 
 public class Classifier {
-    private static final String MODEL_NAME = "mobilenet_imagenet_model.tflite";
+    private static final String MODEL_NAME = "converted_model.tflite";
     private static final String LABEL_FILE = "labels.txt";
 
     Context context;
