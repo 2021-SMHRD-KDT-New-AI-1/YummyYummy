@@ -9,7 +9,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_food"
         android:layout_width="421dp"
         android:layout_height="316dp"
         android:scaleType="centerCrop"
@@ -86,7 +86,7 @@
             android:textColor="@color/white" />
 
         <TextView
-            android:id="@+id/tv_refer2"
+            android:id="@+id/tv_ingredient"
             android:layout_width="200dp"
             android:layout_height="100dp"
             android:layout_alignParentStart="true"
@@ -100,7 +100,7 @@
             android:text="주재료" />
 
         <TextView
-            android:id="@+id/tv_refer3"
+            android:id="@+id/tv_describe"
             android:layout_width="200dp"
             android:layout_height="100dp"
             android:layout_alignParentStart="true"
@@ -122,7 +122,7 @@
             android:text="칼로리" />
 
         <TextView
-            android:id="@+id/tv_refer4"
+            android:id="@+id/tv_flavor"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
