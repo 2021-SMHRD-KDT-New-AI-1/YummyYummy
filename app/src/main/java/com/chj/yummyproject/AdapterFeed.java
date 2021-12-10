@@ -1,5 +1,6 @@
 package com.chj.yummyproject;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
@@ -76,6 +77,7 @@ public class AdapterFeed extends RecyclerView.Adapter<AdapterFeed.MyViewHolder> 
                                 Intent intent = new Intent(context, CommunityActivity.class);
                                 intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                                 context.startActivity(intent);
+                                ((Activity)context).finish();
                             }
                         },
                         new Response.ErrorListener() {
