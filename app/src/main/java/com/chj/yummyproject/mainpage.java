@@ -19,7 +19,7 @@ public class mainpage extends AppCompatActivity {
     String member_id, member_pw, member_name;
     int member_halar, member_vegan, member_egg, member_nut, member_fish, member_bean;
     Button btn_rank;
-    RelativeLayout rl_community;
+    RelativeLayout rl_community, rl_image;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +27,7 @@ public class mainpage extends AppCompatActivity {
 
         btn_rank = findViewById(R.id.btn_rank);
         rl_community = findViewById(R.id.rl_community);
+        rl_image = findViewById(R.id.rl_image);
 
         intent = getIntent();
         member_info_string = intent.getStringExtra("member_info");
@@ -55,5 +56,15 @@ public class mainpage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        rl_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mainpage.this, CameraActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 }

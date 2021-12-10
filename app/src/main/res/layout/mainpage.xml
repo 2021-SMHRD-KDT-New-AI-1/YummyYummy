@@ -190,7 +190,7 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/rl_5"
+        android:id="@+id/rl_image"
         android:layout_width="210dp"
         android:layout_height="170dp"
         android:background="@drawable/btn_color5"

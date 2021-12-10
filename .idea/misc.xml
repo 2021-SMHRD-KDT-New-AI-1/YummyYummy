@@ -41,16 +41,19 @@
         <entry key="app/src/main/res/drawable/btn_round.xml" value="0.14907407407407408" />
         <entry key="app/src/main/res/drawable/btn_round_checked.xml" value="0.14907407407407408" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.14537037037037037" />
+        <entry key="app/src/main/res/layout/activity_camera.xml" value="0.24375" />
         <entry key="app/src/main/res/layout/activity_comment.xml" value="0.2453125" />
         <entry key="app/src/main/res/layout/activity_community.xml" value="0.2453125" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.225" />
         <entry key="app/src/main/res/layout/activity_posting.xml" value="0.2453125" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.225" />
         <entry key="app/src/main/res/layout/activity_register_allergy.xml" value="0.45" />
+        <entry key="app/src/main/res/layout/activity_result.xml" value="0.24375" />
         <entry key="app/src/main/res/layout/activity_test.xml" value="0.25" />
         <entry key="app/src/main/res/layout/comment_list.xml" value="0.2453125" />
         <entry key="app/src/main/res/layout/community_feed.xml" value="0.2453125" />
         <entry key="app/src/main/res/layout/foodinfo.xml" value="0.225" />
+        <entry key="app/src/main/res/layout/fragment_camera.xml" value="0.24375" />
         <entry key="app/src/main/res/layout/mainpage.xml" value="0.225" />
       </map>
     </option>
