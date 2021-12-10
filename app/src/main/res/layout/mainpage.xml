@@ -97,7 +97,7 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/rl_3"
+        android:id="@+id/rl_dialog"
         android:layout_width="210dp"
         android:layout_height="428dp"
         android:background="@drawable/btn_color1"

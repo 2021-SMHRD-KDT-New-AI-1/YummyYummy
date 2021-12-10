@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/shapeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="119dp"
+        android:layout_weight="1"
+        android:background="@drawable/corner_shape"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="97dp"
+            android:background="@drawable/corner_shape"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/eng"
+                android:layout_width="280dp"
+                android:layout_height="36dp"
+                android:gravity="left"
+                android:text="테스트입니다"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#D3D3D3" />
+
+            <TextView
+                android:id="@+id/kor"
+                android:layout_width="280dp"
+                android:layout_height="39dp"
+                android:gravity="left"
+                android:text="테스트입니다"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_voice"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="right"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_mic" />
+
+
+    </LinearLayout>
+</LinearLayout>
