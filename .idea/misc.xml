@@ -55,15 +55,19 @@
         <entry key="app/src/main/res/drawable/corner_shape.xml" value="0.25885416666666666" />
         <entry key="app/src/main/res/drawable/header_background.xml" value="0.15" />
         <entry key="app/src/main/res/drawable/ic_baseline_autorenew_24.xml" value="0.25885416666666666" />
+        <entry key="app/src/main/res/drawable/ic_effort.xml" value="0.25885416666666666" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.14537037037037037" />
         <entry key="app/src/main/res/drawable/ic_mic.xml" value="0.15" />
         <entry key="app/src/main/res/drawable/ic_more.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.25885416666666666" />
+        <entry key="app/src/main/res/drawable/ic_settings.xml" value="0.25885416666666666" />
         <entry key="app/src/main/res/drawable/search_icon_background.xml" value="0.15" />
         <entry key="app/src/main/res/layout/activity_camera.xml" value="0.24375" />
         <entry key="app/src/main/res/layout/activity_comment.xml" value="0.2453125" />
         <entry key="app/src/main/res/layout/activity_community.xml" value="0.2453125" />
         <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_dialog.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/layout/activity_drawer.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.225" />
         <entry key="app/src/main/res/layout/activity_posting.xml" value="0.2453125" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.225" />

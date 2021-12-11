@@ -25,6 +25,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText login_id, login_pw;
     URLInfo urlInfo;
     RequestQueue requestQueue;
+    private long backBtnTime = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,5 +104,19 @@ public class LoginActivity extends AppCompatActivity {
                 requestQueue.add(request);
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        long curTime = System.currentTimeMillis();
+        long gapTime = curTime - backBtnTime;
+
+        if (0 <= gapTime && 2000 >= gapTime) {
+            super.onBackPressed();
+            finishAffinity();
+        } else {
+            backBtnTime = curTime;
+            Toast.makeText(this, "한번 더 누르면 종료됩니다.", Toast.LENGTH_SHORT).show();
+        }
     }
 }
