@@ -30,7 +30,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textUserName"
+            android:id="@+id/tv_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
@@ -111,7 +111,7 @@
             android:layout_height="432dp">
 
             <LinearLayout
-                android:id="@+id/ll_dialog"
+                android:id="@+id/ll_best"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -130,13 +130,14 @@
                     android:layout_margin="8dp"
                     android:contentDescription="@string/app_name"
                     android:padding="8dp"
-                    android:src="@drawable/daialog" />
+                    android:src="@drawable/bibimbap" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/marubold"
                     android:gravity="center"
-                    android:text="Useful Dialogs"
+                    android:text="Best Food"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -153,7 +154,7 @@
                 android:padding="15dp"
                 app:layout_constraintDimensionRatio="H,1:1"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/ll_dialog"
+                app:layout_constraintStart_toEndOf="@+id/ll_best"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
@@ -167,6 +168,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/marubold"
                     android:gravity="center"
                     android:text="Community"
                     android:textColor="@color/black"
@@ -175,7 +177,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/ll_best"
+                android:id="@+id/ll_dialog"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
@@ -184,9 +186,9 @@
                 android:orientation="vertical"
                 android:padding="15dp"
                 app:layout_constraintDimensionRatio="H,1:1"
-                app:layout_constraintEnd_toStartOf="@+id/ll_community"
+                app:layout_constraintEnd_toStartOf="@+id/layoutComfort"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ll_dialog">
+                app:layout_constraintTop_toBottomOf="@+id/ll_best">
 
                 <ImageView
                     android:layout_width="100dp"
@@ -194,13 +196,14 @@
                     android:layout_margin="8dp"
                     android:contentDescription="@string/app_name"
                     android:padding="8dp"
-                    android:src="@drawable/bibimbap" />
+                    android:src="@drawable/daialog" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/marubold"
                     android:gravity="center"
-                    android:text="Best Food"
+                    android:text="Useful Dialog"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -231,6 +234,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/marubold"
                     android:gravity="center"
                     android:text="My Menu"
                     android:textColor="@color/black"
@@ -251,11 +255,36 @@
         app:fabCradleVerticalOffset="6dp"
         app:menu="@menu/bottom_menu" />
 
+
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_image_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img5"
+        app:backgroundTint="@color/grey"
+        app:layout_anchor="@+id/btn_camera"
+        app:layout_anchorGravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/btn_camera"
+        app:layout_constraintStart_toStartOf="@id/btn_camera" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_text_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img4"
+        app:backgroundTint="@color/grey"
+        app:layout_anchor="@+id/btn_camera"
+        app:layout_anchorGravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/btn_camera"
+        app:layout_constraintStart_toStartOf="@id/btn_camera" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_camera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_camera"
-        app:backgroundTint="#ABD17F"
+        app:backgroundTint="#C1BC7F"
         app:layout_anchor="@id/bottomAppBar"
         app:maxImageSize="30dp"
         app:tint="@color/white" />
