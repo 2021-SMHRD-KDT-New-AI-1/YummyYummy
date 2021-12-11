@@ -18,9 +18,12 @@
         android:theme="@style/Theme.YummyPorject"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".DialogActivity"
-            android:windowSoftInputMode="adjustPan"
+            android:name=".Dashboard"
             android:exported="true" />
+        <activity
+            android:name=".DialogActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".CameraActivity"
             android:exported="true" />
@@ -38,9 +41,6 @@
             android:exported="true" />
         <activity
             android:name=".RegisterActivity"
-            android:exported="true" />
-        <activity
-            android:name=".mainpage"
             android:exported="true" />
         <activity
             android:name=".CommentActivity"

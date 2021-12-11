@@ -79,7 +79,7 @@ public class LoginActivity extends AppCompatActivity {
 
                                         if (user_id.equals(id) && user_pw.equals(pw)) {
                                             found = true;
-                                            Intent intent = new Intent(LoginActivity.this, mainpage.class);
+                                            Intent intent = new Intent(LoginActivity.this, Dashboard.class);
                                             intent.putExtra("member_info",info.toString());
                                             startActivity(intent);
                                         }
