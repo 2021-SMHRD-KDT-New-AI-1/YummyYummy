@@ -116,7 +116,7 @@ public class LoginActivity extends AppCompatActivity {
             finishAffinity();
         } else {
             backBtnTime = curTime;
-            Toast.makeText(this, "한번 더 누르면 종료됩니다.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Press it one more time to end.", Toast.LENGTH_SHORT).show();
         }
     }
 }
