@@ -225,7 +225,7 @@ public class CameraActivity extends AppCompatActivity {
                     String resultStr = String.format(Locale.ENGLISH,
                             "class : %s, prob : %.2f%%",
                             output.first, output.second * 100);
-                    if (output.second * 100 >= 50) {
+                    if (output.second * 100 >= 85) {
                         Intent intent = new Intent(CameraActivity.this, FoodInfoActivity.class);
                         intent.putExtra("result", output.first);
                         startActivity(intent);

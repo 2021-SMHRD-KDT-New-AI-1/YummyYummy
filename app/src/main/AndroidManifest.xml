@@ -18,6 +18,9 @@
         android:theme="@style/Theme.YummyPorject"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".UpdateActivity"
+            android:exported="true" />
+        <activity
             android:name=".Dashboard"
             android:exported="true" />
         <activity

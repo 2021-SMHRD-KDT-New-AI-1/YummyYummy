@@ -3,6 +3,7 @@ package com.chj.yummyproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -80,8 +81,10 @@ public class LoginActivity extends AppCompatActivity {
 
                                         if (user_id.equals(id) && user_pw.equals(pw)) {
                                             found = true;
+                                            SharedPreferences.Editor editor = getSharedPreferences("shared", MODE_PRIVATE).edit();
+                                            editor.putString("INFO",info.toString());
+                                            editor.commit();
                                             Intent intent = new Intent(LoginActivity.this, Dashboard.class);
-                                            intent.putExtra("member_info",info.toString());
                                             startActivity(intent);
                                         }
                                     }
@@ -102,6 +105,8 @@ public class LoginActivity extends AppCompatActivity {
                         }
                 );
                 requestQueue.add(request);
+
+
             }
         });
     }

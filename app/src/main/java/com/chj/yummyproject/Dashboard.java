@@ -8,6 +8,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.animation.ObjectAnimator;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -19,14 +20,18 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class Dashboard extends AppCompatActivity {
-    Intent intent;
-    String member_info_string;
     String member_id, member_pw, member_name;
     int member_halar, member_vegan, member_egg, member_nut, member_fish, member_bean;
     LinearLayout ll_community, ll_best, ll_dialog;
@@ -38,6 +43,8 @@ public class Dashboard extends AppCompatActivity {
     View drawer;
     CardView cv_home, cv_update, cv_delete, cv_logout;
     ImageView img_menu;
+    URLInfo urlInfo;
+    RequestQueue requestQueue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,9 +70,13 @@ public class Dashboard extends AppCompatActivity {
         cv_delete = findViewById(R.id.cv_delete);
         cv_logout = findViewById(R.id.cv_logout);
 
-        intent = getIntent();
-        member_info_string = intent.getStringExtra("member_info");
+        SharedPreferences prefs = getSharedPreferences("shared", MODE_PRIVATE);
+        String member_info_string = prefs.getString("INFO", null);
         Log.d("info", member_info_string);
+
+        if (requestQueue == null) {
+            requestQueue = Volley.newRequestQueue(getApplicationContext());
+        }
 
         try {
             JSONObject member_info = new JSONObject(member_info_string);
@@ -119,6 +130,59 @@ public class Dashboard extends AppCompatActivity {
                 AlertDialog.Builder msgBuilder = new AlertDialog.Builder(Dashboard.this)
                         .setTitle("Logout")
                         .setMessage("Do you want log out?")
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                Intent intent = new Intent(Dashboard.this, LoginActivity.class);
+                                startActivity(intent);
+                            }
+                        })
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+
+                            }
+                        });
+                AlertDialog msgDlg = msgBuilder.create();
+                msgDlg.show();
+            }
+        });
+
+        cv_update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dashboard.this, UpdateActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        cv_delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url = urlInfo.getUrl();
+                url += "Delete";
+                url += "?member_id=" + member_id;
+
+                StringRequest request = new StringRequest(
+                        Request.Method.GET,
+                        url,
+                        new Response.Listener<String>() {
+                            @Override
+                            public void onResponse(String response) {
+
+                            }
+                        },
+                        new Response.ErrorListener() {
+                            @Override
+                            public void onErrorResponse(VolleyError error) {
+
+                            }
+                        }
+                );
+                requestQueue.add(request);
+                AlertDialog.Builder msgBuilder = new AlertDialog.Builder(Dashboard.this)
+                        .setTitle("Withdraw")
+                        .setMessage("Do you want to leave?")
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {

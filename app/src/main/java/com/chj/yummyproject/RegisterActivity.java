@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -40,7 +39,7 @@ public class RegisterActivity extends AppCompatActivity {
         et_pw2 = findViewById(R.id.et_pw2);
 
         btn_double_check = findViewById(R.id.btn_double_check);
-        btn_register = findViewById(R.id.btn_register);
+        btn_register = findViewById(R.id.btn_update);
 
         if (requestQueue == null) {
             requestQueue = Volley.newRequestQueue(getApplicationContext());
