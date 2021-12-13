@@ -1,6 +1,7 @@
 package com.chj.yummyproject;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.util.Log;
@@ -32,6 +33,9 @@ public class FoodInfoActivity extends AppCompatActivity {
     URLInfo urlInfo;
     int food_num;
     String food_name, food_img_path, food_ingre, food_favor, food_kcal, food_desc;
+    int member_halar, member_vegan, member_egg, member_nut, member_fish, member_bean;
+    int no_halar, no_vegan, no_egg, no_nut, no_fish, no_bean;
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +51,23 @@ public class FoodInfoActivity extends AppCompatActivity {
 
         Intent i = getIntent();
         String food_kor_name = i.getStringExtra("result");
+
+        SharedPreferences prefs = getSharedPreferences("shared", MODE_PRIVATE);
+        String member_info_string = prefs.getString("INFO", null);
+
+        JSONObject member_info = null;
+        try {
+            member_info = new JSONObject(member_info_string);
+            member_halar = member_info.getInt("halar");
+            member_vegan = member_info.getInt("vegan");
+            member_egg = member_info.getInt("egg");
+            member_nut = member_info.getInt("nut");
+            member_fish = member_info.getInt("fish");
+            member_bean = member_info.getInt("bean");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
 
         if (requestQueue == null) {
             requestQueue = Volley.newRequestQueue(getApplicationContext());
@@ -66,12 +87,17 @@ public class FoodInfoActivity extends AppCompatActivity {
                             JSONArray foodInfo = new JSONArray(response);
                             JSONObject info = (JSONObject) foodInfo.get(0);
                             food_name = info.getString("food_name");
-                            food_num = info.getInt("food_num");
                             food_img_path = info.getString("food_img_path");
                             food_ingre = info.getString("food_ingre");
                             food_favor = info.getString("food_favor");
                             food_kcal = info.getString("food_kcal");
                             food_desc = info.getString("food_desc");
+                            no_halar = info.getInt("no_halar");
+                            no_vegan = info.getInt("no_vegan");
+                            no_egg = info.getInt("no_egg");
+                            no_nut = info.getInt("no_nut");
+                            no_fish = info.getInt("no_fish");
+                            no_bean = info.getInt("no_bean");
 
                             Glide.with(getApplicationContext()).load(food_img_path).into(img_food);
                             tv_title.setText(food_name);
@@ -80,6 +106,24 @@ public class FoodInfoActivity extends AppCompatActivity {
                             tv_cal.setText(food_kcal);
                             tv_flavor.setText(food_favor);
 
+                            if (no_halar == 1 && no_halar == member_halar) {
+                                Log.d("할랄", "할랄");
+                            }
+                            if (no_vegan == 1 && no_vegan == member_vegan) {
+                                Log.d("비건", "비건");
+                            }
+                            if (no_egg == 1 && no_egg == member_egg) {
+                                Log.d("달걀", "달걀");
+                            }
+                            if (no_nut == 1 && no_nut == member_nut) {
+                                Log.d("견과", "견과");
+                            }
+                            if (no_fish == 1 && no_fish == member_fish) {
+                                Log.d("생선", "생선");
+                            }
+                            if (no_bean == 1 && no_bean == member_bean) {
+                                Log.d("콩", "콩");
+                            }
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -97,7 +141,8 @@ public class FoodInfoActivity extends AppCompatActivity {
         btn_confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onBackPressed();
+                Intent intent = new Intent(FoodInfoActivity.this, Dashboard.class);
+                startActivity(intent);
             }
         });
     }
