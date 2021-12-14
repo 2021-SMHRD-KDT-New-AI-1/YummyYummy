@@ -57,8 +57,7 @@ public class LoginActivity extends AppCompatActivity {
                 String user_id = login_id.getText().toString();
                 String user_pw = login_pw.getText().toString();
 
-                //String url = urlInfo.getUrl();
-                String url = "http://172.30.1.19:3002/";
+                String url = urlInfo.getUrl();
                 url += "Login";
                 Log.d("test", "onClick: "+url);
                 StringRequest request = new StringRequest(
