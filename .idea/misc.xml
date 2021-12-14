@@ -52,6 +52,7 @@
         <entry key="app/src/main/res/drawable/btn_color5.xml" value="0.14537037037037037" />
         <entry key="app/src/main/res/drawable/btn_round.xml" value="0.14907407407407408" />
         <entry key="app/src/main/res/drawable/btn_round_checked.xml" value="0.14907407407407408" />
+        <entry key="app/src/main/res/drawable/camera_button_images.xml" value="0.194921875" />
         <entry key="app/src/main/res/drawable/corner_shape.xml" value="0.25885416666666666" />
         <entry key="app/src/main/res/drawable/header_background.xml" value="0.15" />
         <entry key="app/src/main/res/drawable/ic_baseline_autorenew_24.xml" value="0.25885416666666666" />
@@ -74,6 +75,7 @@
         <entry key="app/src/main/res/layout/activity_register_allergy.xml" value="0.45" />
         <entry key="app/src/main/res/layout/activity_result.xml" value="0.24375" />
         <entry key="app/src/main/res/layout/activity_test.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_text.xml" value="0.172265625" />
         <entry key="app/src/main/res/layout/activity_update.xml" value="0.24583333333333332" />
         <entry key="app/src/main/res/layout/comment_list.xml" value="0.2453125" />
         <entry key="app/src/main/res/layout/community_feed.xml" value="0.2453125" />

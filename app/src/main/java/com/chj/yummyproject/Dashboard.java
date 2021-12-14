@@ -249,6 +249,14 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btn_text_camera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dashboard.this, TextActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
