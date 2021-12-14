@@ -17,6 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.YummyPorject"
         android:usesCleartextTraffic="true">
+        <meta-data android:name="android.max_aspect" android:value="2.1" />
         <activity
             android:name=".UpdateActivity"
             android:exported="true" />

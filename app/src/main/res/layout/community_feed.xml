@@ -91,10 +91,9 @@
             <ImageView
                 android:layout_width="18dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/heart"
                 android:backgroundTint="#999999"
                 android:backgroundTintMode="multiply"
-                />
+                android:src="@drawable/heart" />
 
             <TextView
                 android:id="@+id/tv_likes"
