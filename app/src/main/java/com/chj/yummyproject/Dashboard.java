@@ -10,6 +10,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.service.notification.NotificationListenerService;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -45,6 +46,7 @@ public class Dashboard extends AppCompatActivity {
     ImageView img_menu;
     URLInfo urlInfo;
     RequestQueue requestQueue;
+    ImageView img_best;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +59,7 @@ public class Dashboard extends AppCompatActivity {
         ll_community = findViewById(R.id.ll_community);
         ll_best = findViewById(R.id.ll_best);
         ll_dialog = findViewById(R.id.ll_dialog);
+        img_best = findViewById(R.id.img_best);
         tv_username = findViewById(R.id.tv_username);
         tv_userid = findViewById(R.id.tv_userid);
         img_menu = findViewById(R.id.img_menu);
@@ -207,6 +210,14 @@ public class Dashboard extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Dashboard.this, CommunityActivity.class);
                 intent.putExtra("id", id);
+                startActivity(intent);
+            }
+        });
+
+        img_best.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dashboard.this, RankingActivity.class);
                 startActivity(intent);
             }
         });
