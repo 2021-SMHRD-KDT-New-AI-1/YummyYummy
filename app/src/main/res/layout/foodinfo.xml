@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EFEEDA"
-    >
+    android:background="#EFEEDA">
 
 
     <ImageView
         android:id="@+id/img_food"
-        android:layout_width="421dp"
-        android:layout_height="316dp"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,9 +20,9 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/test1" />
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/relativeLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="430dp"
         android:background="@drawable/background_round"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,31 +41,31 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="33dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="381dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/marubold"
             android:text="FoodTitle"
             android:textColor="#C1BC7F"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.093"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btn_confirm"
             android:layout_width="wrap_content"
-            android:layout_height="32dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
+            android:layout_height="48dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="162dp"
-            android:layout_marginTop="378dp"
-            android:layout_marginEnd="148dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="28dp"
             android:background="@drawable/btn_round"
             android:backgroundTint="#C1BC7F"
             android:text="confirm"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/tv_cal"
@@ -74,20 +73,24 @@
             android:layout_height="50dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="33dp"
-            android:layout_marginBottom="65dp"
-            android:text="칼로리" />
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="36dp"
+            android:text="칼로리"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_describe" />
 
         <TextView
             android:id="@+id/tv_flavor"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
+            android:layout_width="151dp"
+            android:layout_height="49dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="48dp"
-            android:layout_marginBottom="66dp"
+            android:layout_marginTop="36dp"
             android:layout_toEndOf="@+id/tv_cal"
             android:fontFamily="@font/elicebold"
-            android:text="음식에 대한 맛" />
+            android:text="음식에 대한 맛"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_cal"
+            app:layout_constraintTop_toBottomOf="@+id/tv_describe" />
 
         <TextView
             android:id="@+id/textView11"
@@ -97,12 +100,14 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="180dp"
-            android:layout_marginTop="290dp"
-            android:layout_marginEnd="167dp"
-            android:layout_marginBottom="119dp"
+            android:layout_marginTop="16dp"
             android:text="Taste"
-            android:textColor="#C1BC7F" />
+            android:textColor="#C1BC7F"
+            app:layout_constraintBottom_toTopOf="@+id/tv_flavor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.429"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/tv_describe" />
 
         <TextView
             android:id="@+id/textView10"
@@ -112,27 +117,29 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="33dp"
-            android:layout_marginTop="290dp"
-            android:layout_marginEnd="312dp"
-            android:layout_marginBottom="120dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="16dp"
             android:text="kcal"
-            android:textColor="#C1BC7F" />
+            android:textColor="#C1BC7F"
+            app:layout_constraintBottom_toTopOf="@+id/tv_cal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_describe" />
 
         <TextView
             android:id="@+id/tv_ingredient"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
+            android:layout_width="306dp"
+            android:layout_height="50dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="49dp"
-            android:layout_marginTop="96dp"
-            android:layout_marginEnd="21dp"
-            android:layout_marginBottom="268dp"
+            android:layout_marginTop="112dp"
             android:fontFamily="@font/elicebold"
-            android:text="재료" />
+            android:text="재료"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView6"
@@ -142,12 +149,14 @@
             android:layout_alignBottom="@+id/imageView"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="59dp"
-            android:layout_marginTop="11dp"
-            android:layout_marginEnd="281dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="256dp"
+            android:layout_marginBottom="16dp"
             android:text="Ingredient"
-            android:textColor="#C1BC7F" />
+            android:textColor="#C1BC7F"
+            app:layout_constraintBottom_toTopOf="@+id/tv_ingredient"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -157,26 +166,27 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="19dp"
-            android:layout_marginTop="59dp"
-            android:layout_marginEnd="350dp"
-            android:layout_marginBottom="331dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
             app:srcCompat="@drawable/number1" />
 
         <TextView
             android:id="@+id/tv_describe"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
+            android:layout_width="307dp"
+            android:layout_height="58dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="49dp"
-            android:layout_marginTop="193dp"
-            android:layout_marginEnd="21dp"
-            android:layout_marginBottom="171dp"
+            android:layout_marginTop="40dp"
             android:fontFamily="@font/elicebold"
-            android:text="음식정보" />
+            android:text="음식정보"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ingredient" />
 
         <TextView
             android:id="@+id/textView9"
@@ -186,12 +196,12 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="59dp"
-            android:layout_marginTop="169dp"
-            android:layout_marginEnd="280dp"
-            android:layout_marginBottom="242dp"
+            android:layout_marginEnd="260dp"
+            android:layout_marginBottom="240dp"
             android:text="FoodInfo"
-            android:textColor="#C1BC7F" />
+            android:textColor="#C1BC7F"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <ImageView
             android:id="@+id/imageView11"
@@ -201,13 +211,12 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="19dp"
-            android:layout_marginTop="156dp"
-            android:layout_marginEnd="350dp"
-            android:layout_marginBottom="234dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ingredient"
             app:srcCompat="@drawable/number2" />
 
-    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

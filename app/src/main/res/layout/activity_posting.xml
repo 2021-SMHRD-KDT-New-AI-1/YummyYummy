@@ -7,55 +7,65 @@
     android:backgroundTint="@color/light_grey"
     tools:context=".PostingActivity">
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="49dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/person" />
-
-    <TextView
-        android:id="@+id/tv_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="chj113024"
-        android:fontFamily="@font/elicebold"
-        android:textColor="#C1BC7F"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.091"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/et_post"
-        android:layout_width="248dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_id" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/btn_send"
-        android:layout_width="85dp"
-        android:layout_height="37dp"
-        android:background="@drawable/btn_color4"
-        android:fontFamily="@font/elicebold"
-        android:text="SEND"
-        android:textColor="#EEEEEE"
-        app:layout_constraintBottom_toBottomOf="@+id/et_post"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.255"
-        app:layout_constraintStart_toEndOf="@+id/et_post"
-        app:layout_constraintTop_toTopOf="@+id/et_post"
-        app:layout_constraintVertical_bias="1.0" />
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="49dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/person" />
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/elicebold"
+            android:text="chj113024"
+            android:textColor="#C1BC7F"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.091"
+            app:layout_constraintStart_toEndOf="@+id/imageView9"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_post"
+            android:layout_width="248dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_id" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="85dp"
+            android:layout_height="37dp"
+            android:background="@drawable/btn_color4"
+            android:fontFamily="@font/elicebold"
+            android:text="SEND"
+            android:textColor="#EEEEEE"
+            app:layout_constraintBottom_toBottomOf="@+id/et_post"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/et_post"
+            app:layout_constraintTop_toTopOf="@+id/et_post"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
