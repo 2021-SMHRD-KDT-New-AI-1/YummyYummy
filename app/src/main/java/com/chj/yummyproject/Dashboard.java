@@ -32,7 +32,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class Dashboard extends AppCompatActivity {
-    String member_id, member_pw, member_name;
+    String id, member_pw, member_name;
     int member_halar, member_vegan, member_egg, member_nut, member_fish, member_bean;
     LinearLayout ll_community, ll_best, ll_dialog;
     TextView tv_username, tv_userid;
@@ -80,7 +80,7 @@ public class Dashboard extends AppCompatActivity {
 
         try {
             JSONObject member_info = new JSONObject(member_info_string);
-            member_id = member_info.getString("member_id");
+            id = member_info.getString("member_id");
             member_pw = member_info.getString("member_pw");
             member_name = member_info.getString("member_name");
             member_halar = member_info.getInt("halar");
@@ -159,6 +159,7 @@ public class Dashboard extends AppCompatActivity {
         cv_delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String member_id = id;
                 String url = urlInfo.getUrl();
                 url += "Delete";
                 url += "?member_id=" + member_id;
@@ -205,13 +206,13 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Dashboard.this, CommunityActivity.class);
-                intent.putExtra("id", member_id);
+                intent.putExtra("id", id);
                 startActivity(intent);
             }
         });
 
-        tv_username.setText(member_id);
-        tv_userid.setText(member_id);
+        tv_username.setText(id);
+        tv_userid.setText(id);
 
         ll_best.setOnClickListener(new View.OnClickListener() {
             @Override
