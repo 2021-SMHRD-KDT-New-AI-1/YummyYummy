@@ -35,6 +35,8 @@ public class FoodInfoActivity extends AppCompatActivity {
     String food_name, food_img_path, food_ingre, food_favor, food_kcal, food_desc;
     int member_halar, member_vegan, member_egg, member_nut, member_fish, member_bean;
     int no_halar, no_vegan, no_egg, no_nut, no_fish, no_bean;
+    boolean found;
+
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -67,6 +69,7 @@ public class FoodInfoActivity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+        int[] member_avoid = {member_halar, member_vegan, member_egg, member_nut, member_fish, member_bean};
 
 
         if (requestQueue == null) {
@@ -124,6 +127,20 @@ public class FoodInfoActivity extends AppCompatActivity {
                             if (no_bean == 1 && no_bean == member_bean) {
                                 Log.d("콩", "콩");
                             }
+                            Log.d("member", String.valueOf(no_halar));
+                            Log.d("food", String.valueOf(member_halar));
+                            int[] food_avoid = {no_halar, no_vegan, no_egg, no_nut, no_fish, no_bean};
+                            found = true;
+                            for (int i=0;i<food_avoid.length;i++) {
+                                if (member_avoid[i] == 1 && food_avoid[i] == 1) {
+                                    found = true;
+                                } else {
+                                    found = false;
+                                }
+                            }
+                            CustomDialog customDialog = new CustomDialog(FoodInfoActivity.this);
+                            customDialog.callFunction(member_avoid, food_avoid);
+
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -137,6 +154,10 @@ public class FoodInfoActivity extends AppCompatActivity {
                 }
         );
         requestQueue.add(request);
+
+
+
+
 
         btn_confirm.setOnClickListener(new View.OnClickListener() {
             @Override
