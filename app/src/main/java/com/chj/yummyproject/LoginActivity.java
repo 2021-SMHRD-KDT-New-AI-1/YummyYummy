@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -56,8 +57,10 @@ public class LoginActivity extends AppCompatActivity {
                 String user_id = login_id.getText().toString();
                 String user_pw = login_pw.getText().toString();
 
-                String url = urlInfo.getUrl();
+                //String url = urlInfo.getUrl();
+                String url = "http://172.30.1.19:3002/";
                 url += "Login";
+                Log.d("test", "onClick: "+url);
                 StringRequest request = new StringRequest(
                         Request.Method.GET,
                         url,
@@ -65,6 +68,7 @@ public class LoginActivity extends AppCompatActivity {
                             @Override
                             public void onResponse(String response) {
                                 try {
+                                    Log.d("test", "onResponse: "+response);
                                     JSONArray memberInfo = new JSONArray(response);
                                     boolean found = false;
                                     for (int i=0;i<memberInfo.length();i++) {
@@ -100,7 +104,7 @@ public class LoginActivity extends AppCompatActivity {
                         new Response.ErrorListener() {
                             @Override
                             public void onErrorResponse(VolleyError error) {
-
+                                error.printStackTrace();
                             }
                         }
                 );
