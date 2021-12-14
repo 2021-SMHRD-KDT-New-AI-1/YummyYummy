@@ -9,7 +9,7 @@
     >
 
 
-    <androidx.recyclerview.widget.RecyclerView
+    <ListView
 
         android:id="@+id/rv"
         android:layout_width="410dp"
@@ -26,7 +26,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.98">
 
-    </androidx.recyclerview.widget.RecyclerView>
+    </ListView>
 
     <TextView
         android:id="@+id/textView12"
