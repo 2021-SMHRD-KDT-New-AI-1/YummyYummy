@@ -130,16 +130,17 @@ public class FoodInfoActivity extends AppCompatActivity {
                             Log.d("member", String.valueOf(no_halar));
                             Log.d("food", String.valueOf(member_halar));
                             int[] food_avoid = {no_halar, no_vegan, no_egg, no_nut, no_fish, no_bean};
-                            found = true;
+                            found = false;
                             for (int i=0;i<food_avoid.length;i++) {
                                 if (member_avoid[i] == 1 && food_avoid[i] == 1) {
                                     found = true;
-                                } else {
-                                    found = false;
                                 }
                             }
+                            Log.d("found", String.valueOf(found));
                             CustomDialog customDialog = new CustomDialog(FoodInfoActivity.this);
-                            customDialog.callFunction(member_avoid, food_avoid);
+                            if (found == true) {
+                                customDialog.callFunction(member_avoid, food_avoid);
+                            }
 
                         } catch (JSONException e) {
                             e.printStackTrace();
