@@ -1,12 +1,15 @@
 package com.chj.yummyproject;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.bumptech.glide.Glide;
 
@@ -50,11 +53,20 @@ public class RankingAdapter extends BaseAdapter {
         ImageView rank_img = view.findViewById(R.id.rank_img);
         TextView rank_name = view.findViewById(R.id.rank_name);
         TextView rank_score = view.findViewById(R.id.rank_score);
+        ConstraintLayout rank_list = view.findViewById(R.id.rank_list);
 
         rank_num.setText(String.valueOf(data.get(i).getRank_num()));
         Glide.with(context).load(data.get(i).getRank_img()).into(rank_img);
         rank_name.setText(data.get(i).getRank_name());
         rank_score.setText(String.valueOf(data.get(i).getRank_score()));
+        rank_list.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, FoodInfoActivity.class);
+                intent.putExtra("result", data.get(i).getRank_kor_name());
+                context.startActivity(intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+            }
+        });
         return view;
     }
 }

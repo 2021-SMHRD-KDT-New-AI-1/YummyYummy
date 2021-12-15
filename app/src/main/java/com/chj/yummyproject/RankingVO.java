@@ -5,12 +5,14 @@ public class RankingVO {
     private String rank_img;
     private String rank_name;
     private double rank_score;
+    private String rank_kor_name;
 
-    public RankingVO(int rank_num, String rank_img, String rank_name, double rank_score) {
+    public RankingVO(int rank_num, String rank_img, String rank_name, double rank_score, String rank_kor_name) {
         this.rank_num = rank_num;
         this.rank_img = rank_img;
         this.rank_name = rank_name;
         this.rank_score = rank_score;
+        this.rank_kor_name = rank_kor_name;
     }
 
     public int getRank_num() {
@@ -43,5 +45,13 @@ public class RankingVO {
 
     public void setRank_score(double rank_score) {
         this.rank_score = rank_score;
+    }
+
+    public String getRank_kor_name() {
+        return rank_kor_name;
+    }
+
+    public void setRank_kor_name(String rank_kor_name) {
+        this.rank_kor_name = rank_kor_name;
     }
 }

@@ -3,8 +3,11 @@ package com.chj.yummyproject;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.service.notification.NotificationListenerService;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.android.volley.Request;
@@ -27,6 +30,7 @@ public class RankingActivity extends AppCompatActivity {
     RequestQueue requestQueue;
     URLInfo urlInfo;
     JSONArray rankInfo;
+    ImageView img_first, img_second, img_third;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +39,9 @@ public class RankingActivity extends AppCompatActivity {
 
         data = new ArrayList<RankingVO>();
         rv = findViewById(R.id.rv);
+        img_first = findViewById(R.id.img_first);
+        img_second = findViewById(R.id.img_second);
+        img_third = findViewById(R.id.img_third);
 
         if (requestQueue == null) {
             requestQueue = Volley.newRequestQueue(getApplicationContext());
@@ -56,8 +63,9 @@ public class RankingActivity extends AppCompatActivity {
                                 String food_name = info.getString("food_name");
                                 String food_img_path = info.getString("food_img_path");
                                 double food_score = info.getDouble("food_score");
+                                String food_kor_name = info.getString("food_kor_name");
 
-                                data.add(new RankingVO(food_count, food_img_path, food_name, food_score));
+                                data.add(new RankingVO(food_count, food_img_path, food_name, food_score, food_kor_name));
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -75,5 +83,32 @@ public class RankingActivity extends AppCompatActivity {
                 }
         );
         requestQueue.add(request);
+
+        img_first.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(RankingActivity.this, FoodInfoActivity.class);
+                intent.putExtra("result", "라면");
+                startActivity(intent);
+            }
+        });
+
+        img_second.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(RankingActivity.this, FoodInfoActivity.class);
+                intent.putExtra("result", "족발");
+                startActivity(intent);
+            }
+        });
+
+        img_third.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(RankingActivity.this, FoodInfoActivity.class);
+                intent.putExtra("result", "순대");
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -17,6 +17,7 @@
         tools:layout_editor_absoluteY="111dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rank_list"
             android:layout_width="match_parent"
             android:layout_height="80dp">
 
@@ -27,8 +28,8 @@
                 android:layout_height="50dp"
                 android:fontFamily="@font/marubold"
                 android:text="1st"
-                android:textSize="30dp"
                 android:textColor="#C1BC7F"
+                android:textSize="30dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/rank_img"
                 app:layout_constraintStart_toStartOf="parent"
