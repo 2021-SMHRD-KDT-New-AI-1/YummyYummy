@@ -22,8 +22,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/relativeLayout"
-        android:layout_width="match_parent"
-        android:layout_height="430dp"
+        android:layout_width="417dp"
+        android:layout_height="450dp"
         android:background="@drawable/background_round"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,8 +64,10 @@
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.504"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ingredient"
+            app:layout_constraintVertical_bias="1.0" />
 
         <TextView
             android:id="@+id/tv_cal"
@@ -73,24 +75,25 @@
             android:layout_height="50dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="52dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="188dp"
             android:text="칼로리"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_describe" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_ingredient" />
 
         <TextView
             android:id="@+id/tv_flavor"
             android:layout_width="151dp"
             android:layout_height="49dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="188dp"
             android:layout_toEndOf="@+id/tv_cal"
             android:fontFamily="@font/elicebold"
             android:text="음식에 대한 맛"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.765"
             app:layout_constraintStart_toEndOf="@+id/tv_cal"
-            app:layout_constraintTop_toBottomOf="@+id/tv_describe" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_ingredient" />
 
         <TextView
             android:id="@+id/textView11"
@@ -104,10 +107,11 @@
             android:text="Taste"
             android:textColor="#C1BC7F"
             app:layout_constraintBottom_toTopOf="@+id/tv_flavor"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.429"
+            app:layout_constraintEnd_toEndOf="@+id/tv_describe"
+            app:layout_constraintHorizontal_bias="0.597"
             app:layout_constraintStart_toEndOf="@+id/textView10"
-            app:layout_constraintTop_toBottomOf="@+id/tv_describe" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_describe"
+            app:layout_constraintVertical_bias="1.0" />
 
         <TextView
             android:id="@+id/textView10"
@@ -117,13 +121,14 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="52dp"
+            android:layout_marginStart="28dp"
             android:layout_marginTop="16dp"
             android:text="kcal"
             android:textColor="#C1BC7F"
             app:layout_constraintBottom_toTopOf="@+id/tv_cal"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_describe" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_describe"
+            app:layout_constraintVertical_bias="1.0" />
 
         <TextView
             android:id="@+id/tv_ingredient"
@@ -133,11 +138,11 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="112dp"
+            android:layout_marginTop="108dp"
             android:fontFamily="@font/elicebold"
             android:text="재료"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintHorizontal_bias="0.285"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -155,7 +160,9 @@
             android:textColor="#C1BC7F"
             app:layout_constraintBottom_toTopOf="@+id/tv_ingredient"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
             app:layout_constraintVertical_bias="1.0" />
 
         <ImageView
@@ -180,11 +187,11 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="64dp"
             android:fontFamily="@font/elicebold"
             android:text="음식정보"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintHorizontal_bias="0.516"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_ingredient" />
 
@@ -197,11 +204,15 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="260dp"
-            android:layout_marginBottom="240dp"
+            android:layout_marginBottom="304dp"
             android:text="FoodInfo"
             android:textColor="#C1BC7F"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:layout_constraintTop_toTopOf="@+id/imageView11"
+            app:layout_constraintVertical_bias="0.105" />
 
         <ImageView
             android:id="@+id/imageView11"
@@ -212,6 +223,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_ingredient"
             app:srcCompat="@drawable/number2" />

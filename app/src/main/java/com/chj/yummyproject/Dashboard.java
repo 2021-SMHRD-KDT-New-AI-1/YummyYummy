@@ -35,7 +35,7 @@ import org.json.JSONObject;
 public class Dashboard extends AppCompatActivity {
     String id, member_pw, member_name;
     int member_halar, member_vegan, member_egg, member_nut, member_fish, member_bean;
-    LinearLayout ll_community, ll_best, ll_dialog;
+    LinearLayout ll_community, ll_best, ll_dialog, ll_menu;
     TextView tv_username, tv_userid;
     FloatingActionButton btn_camera, btn_image_camera, btn_text_camera;
     boolean isFabOpen = false;
@@ -59,6 +59,7 @@ public class Dashboard extends AppCompatActivity {
         ll_community = findViewById(R.id.ll_community);
         ll_best = findViewById(R.id.ll_best);
         ll_dialog = findViewById(R.id.ll_dialog);
+        ll_menu = findViewById(R.id.ll_menu);
         img_best = findViewById(R.id.img_best);
         tv_username = findViewById(R.id.tv_username);
         tv_userid = findViewById(R.id.tv_userid);
@@ -229,6 +230,14 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+            }
+        });
+
+        ll_menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dashboard.this, MenuActivity.class);
+                startActivity(intent);
             }
         });
 

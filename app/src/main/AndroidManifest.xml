@@ -29,6 +29,9 @@
         android:theme="@style/Theme.YummyPorject"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".MenuActivity"
+            android:exported="true" />
+        <activity
             android:name=".RankingActivity"
             android:exported="true" />
 

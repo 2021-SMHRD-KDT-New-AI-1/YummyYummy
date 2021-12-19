@@ -1,7 +1,7 @@
 package com.chj.yummyproject;
 
 public class URLInfo {
-    private final static String URL = "http://172.30.1.19:3002/";
+    private final static String URL = "http://192.168.0.9:3002/";
 
     public static String getUrl() {
         return URL;
